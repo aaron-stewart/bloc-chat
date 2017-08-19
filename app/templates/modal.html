@@ -1,0 +1,17 @@
+<section>
+    <form ng-submit="window.submit()">
+        <div>
+            <h2>Create new room</h2>
+            <p>Enter a room name</p>
+        </div>
+        <div>
+            <input ng-model='modal.text' type="text">
+        </div>
+        <div>
+            <button ng-click="modal.closeModal()">Cancel</button>
+        </div>
+        <div>
+            <button ng-click="modal.submit()">Add Room<button>
+        </div>
+    </form>
+</section>
