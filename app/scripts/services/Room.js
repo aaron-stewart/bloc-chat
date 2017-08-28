@@ -3,6 +3,7 @@
         var Room = {};
         var ref = firebase.database().ref().child("rooms");
         var rooms = $firebaseArray(ref);
+        var pickChat;
 
         Room.all = rooms;
 
@@ -10,9 +11,6 @@
             rooms.$add(room);
         }
 
-        rooms.addRoom = function(newRoomText) {
-            Room.add(newRoomText);
-        };
 
         return Room;
     }

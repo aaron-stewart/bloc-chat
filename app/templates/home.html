@@ -1,5 +1,22 @@
-<h1>Bloc Chat</h1>
-<a href="#" ng-click="home.showModal()">Add Room</a>
-<div ng-repeat="room in home.rooms">
-{{room}}
-</div>
+<section>
+    <div class="sideBar">
+        <h1 class="navTitle">Bloc Chat</h1>
+        <a id="addBtn" href="#" ng-click="home.showModal()">Add Room</a>
+        <div ng-repeat="room in home.rooms">
+          <a href="#" ng-click=home.selectRoom(room) class="roomButtons">{{ room.roomTitle }}</a>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="msgBox">
+        <div class="selRoom">{{ home.selectedRoomName }}</div>
+        <table class="table table-striped">
+            <tr ng-repeat="message in home.messages">
+                <td class="sender">{{message.username}}</td>
+                <td class="wording">{{message.message}}</h4>
+                <td class="timing">{{message.datetime}}</td>  
+            </tr>
+        </table>
+    </div>
+</section>
