@@ -11,7 +11,6 @@
             rooms.$add(room);
         }
 
-
         return Room;
     }
 
