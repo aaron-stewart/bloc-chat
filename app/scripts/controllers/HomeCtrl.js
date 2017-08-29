@@ -11,9 +11,15 @@
                 controller: 'ModalCtrl as modal'
             });
         }
+
         this.selectRoom = function(room) {
             this.messages = Message.getByRoomId(room.$id);
-            this.selectedRoomName = room.roomTitle;
+            this.selectedRoom = room;
+        }
+
+        this.send = function() {
+            Message.send(this.newMessage, this.selectedRoom.$id);
+            this.newMessage = "";
         }
     }
 

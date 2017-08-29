@@ -1,22 +1,26 @@
-<section>
+<section class="left">
     <div class="sideBar">
         <h1 class="navTitle">Bloc Chat</h1>
         <a id="addBtn" href="#" ng-click="home.showModal()">Add Room</a>
         <div ng-repeat="room in home.rooms">
-          <a href="#" ng-click=home.selectRoom(room) class="roomButtons">{{ room.roomTitle }}</a>
+            <a href="#" ng-click=home.selectRoom(room) class="roomButtons">{{ room.roomTitle }}</a>
         </div>
     </div>
 </section>
 
-<section>
+<section class="right">
     <div class="msgBox">
-        <div class="selRoom">{{ home.selectedRoomName }}</div>
+        <div class="selRoom">{{ home.selectedRoom.roomTitle }}</div>
         <table class="table table-striped">
             <tr ng-repeat="message in home.messages">
-                <td class="sender">{{message.username}}</td>
-                <td class="wording">{{message.message}}</h4>
-                <td class="timing">{{message.datetime}}</td>  
+                <td class="sender">{{ message.username }}</td>
+                <td class="wording">{{ message.message }}</h4>
+                <td class="timing">{{ message.datetime }}</td>
             </tr>
         </table>
+    </div>
+    <div class="writeSend">
+        <input class="sendMessage" type="text" placeholder="Write your message here.." ng-model="home.newMessage">
+        <button class="sendButton" ng-disabled="!home.newMessage" ng-click="home.send()">Send</button>
     </div>
 </section>

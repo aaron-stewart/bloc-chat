@@ -1,13 +1,36 @@
 html {
     height: 100%;
     font-size: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.left {
+    height: 100%;
+    length: 35%;
+    display: inline-block;
+    margin: 0;
+}
+
+.right {
+    clear: left;
+    length: 65%;
+    height: 100%;
+    display: inline-block;
+    margin: 0;
 }
 
 .sideBar {
     background-color: lightgrey;
     float: left;
-    width: 35%;
     height: 100%;
+    margin: 0;
 }
 
 .navTitle {
@@ -34,8 +57,6 @@ html {
 }
 
 .msgBox {
-    float: right;
-    width: 65%;
     height: 100%;
 }
 
@@ -53,17 +74,39 @@ html {
     border-color: black;
 }
 
+.table {
+   width: 100%;
+}
+
 .selRoom {
     padding: 12px 12px 12px 12px;
     font-size: 20px;
 }
+
 .sender {
     font-size: 17px;
     color: darkblue;
 }
+
 .wording {
 
 }
 .timing {
     float: right;
+}
+
+.userModalStyle {
+
+}
+
+.sendMessage {
+    border-style: inset;
+    length: 30%;
+}
+.writeSend input {
+    width: 70%;
+}
+.sendButton {
+    float: right;
+    background-color: lightblue;
 }

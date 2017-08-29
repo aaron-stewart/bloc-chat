@@ -1,0 +1,9 @@
+<section>
+    <div>
+        <h3>Set a Username:</h3>
+        <input type="text" ng-model="user.name">
+        <div>
+            <button ng-disabled="!user.name" ng-click="user.createUsername(user.name)">Create Username</button>
+      </div>
+    </div>
+</section>
