@@ -3,7 +3,6 @@
         var Message = {};
         var ref = firebase.database().ref().child("messages");
         var messages = $firebaseArray(ref);
-        
 
         Message.getByRoomId = function(roomId) {
             // Filter the messages by their room ID.
@@ -15,7 +14,7 @@
             messages.$add({
                 username: $cookies.get('blocChatCurrentUser'),
                 message: newMessage,
-                datetime: new Date.now(),
+                datetime: firebase.database.ServerValue.TIMESTAMP,
                 roomId: roomId
             });
         }
