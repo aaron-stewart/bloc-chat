@@ -1,112 +1,108 @@
 html {
     height: 100%;
-    font-size: 100%;
-    margin: 0;
-    padding: 0;
+    width: 100%;
 }
 
 body {
     height: 100%;
     width: 100%;
-    margin: 0;
 }
 
 .left {
-    height: 100%;
-    length: 35%;
     display: inline-block;
-    margin: 0;
+    background-color: lightgrey;
+    height: 100%;
+    width: 30%;
 }
 
 .right {
-    clear: left;
-    length: 65%;
-    height: 100%;
     display: inline-block;
-    margin: 0;
-}
-
-.sideBar {
-    background-color: lightgrey;
-    float: left;
     height: 100%;
-    margin: 0;
+    width: 70%;
+    float: right;
 }
 
 .navTitle {
-    color: #444444;
-    padding-left: 10px;
+    display: inline-block;
+    padding: 0rem 0rem 1rem 1rem;
+}
+
+.container {
     display: inline-block;
 }
 
 #addBtn {
     display: inline-block;
-    padding: 3px;
-    margin: 10px 10px 15px 10px;
-    font-size: 20px;
-    border-style: solid;
-    border-width: thin;
-    border-radius: 6px;
+    border: 3px solid #337ab7;
+    border-radius: 10px;
+    background-color: white;
+    padding: .6rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    font-size: 2rem;
+    position: relative;
+    top: -4px;
 }
 
 .roomButtons {
-    padding: 10px 10px 10px 10px;
-    margin-bottom: 30px;
-    font-size: 17px;
-    color: black;
-}
-
-.msgBox {
-    height: 100%;
-}
-
-.modal-box {
-    position:absolute;
-    width:350px;
-    top: 20%;
-    left: 60%;
-    margin-left: -200px;
-    margin-top: -40px;
-    padding: 6px;
-    border-width: 2px;
-    background-color: darkgrey;
-    border-style: inset;
-    border-color: black;
-}
-
-.table {
-   width: 100%;
+  padding-left: 1rem;
+  font-size: 1.3em;
 }
 
 .selRoom {
-    padding: 12px 12px 12px 12px;
-    font-size: 20px;
+    padding: 1rem;
+    font-size: 1.3em;
+    color: #337ab7;
 }
 
-.sender {
-    font-size: 17px;
-    color: darkblue;
+.msgBox {
+    height: 90%;
 }
 
-.wording {
-
-}
 .timing {
     float: right;
 }
 
-.userModalStyle {
-
-}
-
 .sendMessage {
-    border-style: inset;
-    length: 30%;
+    width: 90%;
+    margin-left: 1rem;
 }
-.writeSend input {
-    width: 70%;
-}
+
 .sendButton {
-    float: right;
-    background-color: lightblue;
+    border-color: #337ab7;
+    background-color: white;
+    border-radius: 10px;
+    border-width: 3px;
+    color: #337ab7;
+    font-size: 1.3em;
+    padding: 1.3px;
+}
+
+.sendButton:hover {
+    font-style: oblique;
+}
+
+.uMod {
+    padding-left: 2rem;
+}
+.uMod h3 {
+    color: #337ab7;
+    align-content: center;
+}
+.uMod input {
+    margin-bottom: 1rem;
+    width: 80%;
+}
+.uMod div button {
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    border-color: #337ab7;
+    border-width: 3px;
+    background-color: white;
+    color: #337ab7;
+    font-size: 2rem;
+}
+.uMod div button:hover {
+    font-style: oblique;
 }

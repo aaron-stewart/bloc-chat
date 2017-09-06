@@ -1,7 +1,9 @@
 <section class="left">
     <div class="sideBar">
         <h1 class="navTitle">Bloc Chat</h1>
-        <a id="addBtn" href="#" ng-click="home.showModal()">Add Room</a>
+        <!--<div class="container"> -->
+            <a id="addBtn" href="#" ng-click="home.showModal()">Add Room</a>
+    <!--    </div>-->
         <div ng-repeat="room in home.rooms">
             <a href="#" ng-click=home.selectRoom(room) class="roomButtons">{{ room.roomTitle }}</a>
         </div>
@@ -14,8 +16,8 @@
         <table class="table table-striped">
             <tr ng-repeat="message in home.messages">
                 <td class="sender">{{ message.username }}</td>
-                <td class="wording">{{ message.message }}</h4>
-                <td class="timing">{{ message.datetime }}</td>
+                <td class="wording">{{ message.message }}</td>
+                <td class="timing">{{ message.datetime | timeStampz }}</td>
             </tr>
         </table>
     </div>
