@@ -106,3 +106,31 @@ body {
 .uMod div button:hover {
     font-style: oblique;
 }
+
+
+.mod {
+    padding-left: 2rem;
+}
+.mod h2 {
+    color: #337ab7;
+}
+.mod input {
+    margin-bottom: 1rem;
+    width: 90%
+}
+.mod .btns {
+    display: inline-block;
+    padding-bottom: 2rem;
+}
+.mod .btns .newRoo {
+    border-radius: 8px;
+    border-width: 3px;
+    border-color: #337ab7;
+    background-color: white;
+    color: #337ab7;
+    font-size: 1.9rem;
+    margin-right: 76px;
+}
+.mod .btns .newRoo:hover {
+    font-style: oblique;
+}
